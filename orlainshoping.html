@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="olainshoping.css">
+    <link rel="icon" href="bea808d6-698e-4304-8baf-45b2f5bf3cea.png" alt="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ორლაინ შოპინგი</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="orlainshoping.html">
+                        <img src="bea808d6-698e-4304-8baf-45b2f5bf3cea.png" width="100px">
+                    </a>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+<li><a href="#">მთავარი</a></li>
+<li><a href="#">პროდუქტები</a></li>
+<li><a href="#">ექაუნთები</a></li>
+                    </ul>
+                </nav>
+                <a href="#"><img src="data:image/png;base64,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"
+                    width="30px" height="30px" alt=""></a>
+               <a href="#"><img src="https://assets.stickpng.com/images/588a6507d06f6719692a2d15.png" width="30" class="menu-icon"
+                onclick="menutoggle()"></a>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give Your Workomt Bier!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fugit possimus maiores placeat iste illum, <br>consequuntur incidunt odio quia atque quibusdam voluptatum 
+                        cum et id enim tempore, est ipsam officiis.</p>
+                        <a href="index.html" target="_blank" rel="noopener blablabla" class="btn">Exlove Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="https://www.pngplay.com/wp-content/uploads/9/WWW-Website-Background-PNG-Image.png" width="900px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--comentari  -->
+    <div class="categories">
+        <div class="small-categoria">
+            <div class="row">
+                <div class="col-3">
+                <img src="https://spng.pngfind.com/pngs/s/60-601021_desktop-computer-png-hd-computer-images-hd-png.png" >
+            </div>
+            <div class="col-3">
+                <img src="https://parspng.com/wp-content/uploads/2023/03/casecomputerpng.parspng.com-5-300x300.png" >
+            </div>
+            <div class="col-3">
+                <img src="https://www.transparentpng.com/thumb/computer/Tzb8wt-technological-tools-download-computer-printer-designer-screen-photocopy-button-click.png" >
+            </div>
+            </div>
+        </div>
+    </div>
+<!-- fiocher produqt -->
+<div class="small-container">
+    <h2 class="title">უახლესი მოდელები</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href="#"><img src="https://e7.pngegg.com/pngimages/889/919/png-clipart-intel-core-i7-gaming-computer-desktop-computers-desktop-pc-electronics-computer-thumbnail.png" alt=""></a>
+            <a href="#">
+                <h4>ეიფლის ახალი სერია M7</h4>
+            </a>
+            <div class="rating">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i> 
+            </div>
+            <p>800$</p>
+        </div>
+
+        <div class="col-4">
+            <img src="https://freepngimg.com/thumb/categories/673.png" alt="">
+            <h4>დეილის ახალი მოდელი</h4>
+            <div class="rating">
+                <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i> 
+
+            </div>
+            <p>800$</p>
+        </div>
+
+        <div class="col-4">
+            <img src="https://alta.ge/images/thumbnails/270/250/detailed/248/129031.png.jpg" alt="">
+            <h4>გულადის ახალი ლეპტოპი</h4>
+            <div class="col-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkK25JkTchPaUJUWSlmn2F_sn9jHk1ugNBkg&usqp=CAU" alt="">
+                <h4>დეილის ახალი მოდელი</h4>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> 
+    
+                </div>
+                <p>800$</p>
+            </div>
+<div class="col-4">
+    <img src="https://png.pngtree.com/element_our/20190531/ourmid/pngtree-color-glare-computer-free-map-image_1276302.jpg" alt="">
+</div>
+    <h4>leptipo</h4>
+    <div class="rating">
+        <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i> 
+
+    </div>
+    <p>800$</p>
+</div>
+
+        </div>
+        <h2 class="title">ფასდაკლებული პროდუქტები</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNo_wrlvjhhRyg3MYxbYjZo2RV5iUPlQ7HzA&usqp=CAU" width="300" alt="">
+                <h4>არა ლენონს:))</h4>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i> 
+            
+                </div>
+                <p>200$</p>
+            </div>
+            <div class="col-4">
+                <img src="https://e7.pngegg.com/pngimages/714/620/png-clipart-flat-screen-computer-monitor-laptop-computer-repair-technician-sales-desktop-computers-computer-computer-network-electronics-thumbnail.png" alt="">
+                <h4>არა ლენონს რა დავწერო;დ</h4>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i> 
+            
+                </div>
+                <p>200$</p>
+            </div>
+            <div class="col-4">
+                <img src="https://i.pinimg.com/originals/9e/43/44/9e4344fbf8840d797623bdaedae115e8.png" width="300" alt="">
+            <h4>არა ლენონს:))</h4>
+            <div class="rating">
+                <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i> 
+        
+            </div>
+            <p>200$</p>
+        </div>
+        <div class="col-4">
+            <img src="https://freepngimg.com/save/5807-computer-desktop-pc-png-image/960x960" width="300px" alt="">
+        <h4>არა ლენონს:))</h4>
+        <div class="rating">
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i> 
+    
+        </div>
+        <p>200$</p>
+    </div>
+    <div class="col-4">
+        <img src="https://cutewallpaper.org/24/computer-png/computer-images-without-background-hd-png-download-vhv.png" width="300px" alt="">
+    <h4>არა ლენონს:))</h4>
+    <div class="rating">
+        <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i> 
+
+    </div>
+    <p>200$</p>
+</div>
+<div class="col-4">
+    <img src="https://img.freepik.com/free-vector/laptop-coloured_78370-510.jpg" width="300px" alt="">
+<h4>არა ლენონს:))</h4>
+<div class="rating">
+    <i class="fa-sharp fa-solid fa-star"></i>
+    <i class="fa-sharp fa-solid fa-star"></i>
+    <i class="fa-sharp fa-solid fa-star"></i>
+    <i class="fa-sharp fa-solid fa-star"></i>
+    <i class="fa-regular fa-star"></i> 
+
+</div>
+<p>200$</p>
+</div>
+<div class="col-4">
+    <img src="https://www.pngitem.com/pimgs/m/367-3670817_laptop-png-free-image-download-laptop-vector-png.png" width="300px" alt="">
+<h4>არა ლენონს:))</h4>
+<div class="rating">
+    <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i> 
+
+</div>
+<p>200$</p>
+</div>
+<div class="col-4">
+    <img src="https://www.freeiconspng.com/thumbs/computer-png-hd/computer-clipart-free-download-17.png" width="300px" alt="">
+<h4>არა ლენონს:))</h4>
+<div class="rating">
+    <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+</div>
+<p>200$</p>
+</div>
+            </div>
+            </div>
+            <!-- offer -->
+            <div class="offer">
+                <div class="small-container">
+                    <div class="row">
+                        <div class="col-2">
+                    <img src="https://e7.pngegg.com/pngimages/874/835/png-clipart-computer-drawing-cartoon-computer-computer-network-computer-thumbnail.png" class="offer-img" alt="">
+
+                </div>
+                </div>
+<div class="col-2">
+    <p>კეთილი იყოს თქვენი მობრძანება ჩვენს გვერდზე..</p>
+    <h1>სათაური</h1>
+    <small>
+        კომპიუტერი (ინგლ. computer) — მოწყობილობა, რომლის დაპროგრამების მეშვეობით ხდება არითმეტიკული ან ლოგიკური ოპერაციის ავტომატური შესრულება.
+         ვინაიდან ოპერაციების თანმიმდევრობა შეიძლება შეიცვალოს, კომპიუტერს შეუძლია ერთდროულად რამდენიმე მათგანის შესრულება.
+    </small><br>
+</div>
+            </div>
+        </div>
+        </div>
+        <!-- Featured Products -->
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="col-3">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem veniam nostrum vitae! Corrupti voluptatum distinctio nemo est consectetur possimus, quam quis culpa 
+                        soluta aliquid voluptas autem, quibusdam provident molestias error.</p>
+                        <div class="rating">
+                            <i class="fas fa-desktop"></i>
+                            <i class="fas fa-tv"></i>
+                            <i class="fas fa-tablet-alt"></i>
+                            <i class="fas fa-laptop"></i>
+                            <i class="fas fa-laptop-house"></i>
+            
+                        </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Adalovelace.jpg" alt="">
+                        <h3>ადა ლავლეისი</h3>
+                </div>
+                <div class="col-3">
+                    <div class="col-3">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem veniam nostrum vitae! Corrupti voluptatum distinctio nemo est consectetur possimus, quam quis culpa 
+                            soluta aliquid voluptas autem, quibusdam provident molestias error.</p>
+                            <div class="rating">
+                                <i class="fas fa-desktop"></i>
+                                <i class="fas fa-tv"></i>
+                                <i class="fas fa-tablet-alt"></i>
+                                <i class="fas fa-laptop"></i>
+                                <i class="fas fa-laptop-house"></i>
+                
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Tim_Berners-Lee-Knight-crop.jpg">
+                            <h3>ტიმ ბერნან-ლი</h3>
+                    </div>
+</div>
+                </div>
+            </div>
+        </div>
+        <!-- brends -->
+        <div class="brends">
+            <div class="small-container">
+                <div class="row">
+                <div class="col-5">
+                    <img src="data:image/png;base64,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" alt="">
+
+                </div>
+                <div class="col-5">
+                    <img src="data:image/png;base64,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" alt="">
+                    
+                </div>
+                <div class="col-5">
+                    <img src="https://w7.pngwing.com/pngs/621/972/png-transparent-lg-logo-lg-logo-television-text-trademark.png" alt="">
+                    
+                </div>
+                <div class="col-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/TOSHIBA_Logo.png" alt="">
+                    
+                </div>
+                <div class="col-5">
+                    <img src="https://www.freepnglogos.com/uploads/original-samsung-logo-10.png" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+<div class="footer-col-1">
+    <h3>ჩამიტვირთეთ ჩვენი აპლიკაცია</h3>
+    <p>ჩვენი აპლიკაცია მუშაობს ყველა დივ აიდზე </p>
+    <div class="app-logo">
+        <img src="" >
+        
+        <img src="https://e7.pngegg.com/pngimages/912/1019/png-clipart-app-store-google-play-apple-apple-text-logo.png" width="80px" alt="">
+
+    </div>
+    
+</div>
+<div class="footer-col-2">
+    <img src="bea808d6-698e-4304-8baf-45b2f5bf3cea.png" width="100px" alt="">
+
+</div>
+<div class="footer-col-3">
+    <h3>ლინკები</h3>
+    <ul>
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-youtube"></i></li>
+        <li><i class="fa-brands fa-telegram"></i></li>
+
+    </ul>
+</div>
+<div class="footer-col-4">
+    <h3>დაგვალაიქე</h3>
+    <ul>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+        <li>YouTube</li>
+        <li>Telegram</li>
+    </ul>
+</div>
+                </div>
+                <hr>
+                <p class="copyrigth">საიტი შექმნილია ჯგუფის მიერ</p>
+          
+          
+    </div>
+</div>
+
+<script src="my.js" defer></script>
+
+</body>
+</html>
